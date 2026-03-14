@@ -2,7 +2,7 @@
 
 # Installation:
     1. Enter project directory.
-    2. Run `make` to compile all tools. (NOTE: wordlist_gen tool is generates wordlist without spaces)
+    2. Run `make` to compile all tools. (NOTE: 'wordlist_gen' tool generates wordlist without extra newlines)
 
 # Format Specification:
     * For Symetric encryption provide key on the next line after message.
