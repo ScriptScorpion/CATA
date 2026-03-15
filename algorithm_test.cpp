@@ -24,7 +24,8 @@ std::string encrypt(std::string &word, std::string &key) {
         {
             sprintf(output + (i * 2), "%02x", hash[i]);
         }
-        output[64] = '\0';
+        output[SHA256_DIGEST_LENGTH] = '\n';
+        output[SHA256_DIGEST_LENGTH+1] = '\0';
         // end of example SHA256
     }
     else {
@@ -65,7 +66,7 @@ std::string encrypt(std::string &word, std::string &key) {
         for (; i < 32; ++i) {
             output[i] = encrypt[i];
         }
-        output[i] = ' ';
+        output[i] = '\n';
         ++i;
         for (; i < 65; ++i) {
             output[i] = decrypt[i-33];

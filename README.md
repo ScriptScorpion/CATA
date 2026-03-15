@@ -7,7 +7,7 @@
 # Format Specification:
     * For Symetric encryption provide key on the next line after message.
     * For Hash function leave next line blank after message.
-    * Output file format is: 1. Encrypted message 2. Space 3. Decrypted message
+    * Output file format is: 1. Encrypted message 2. Newline 3. Decrypted message
 
 
 Right now supported Symetric encryption and Hash functions.
